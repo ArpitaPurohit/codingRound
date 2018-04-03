@@ -18,12 +18,13 @@ public class SignInTest {
         waitFor(2000);
 
         driver.findElement(By.linkText("Your trips")).click();
+          waitFor(1000);
         driver.findElement(By.id("SignIn")).click();
-
+          waitFor(2000);
         driver.findElement(By.id("signInButton")).click();
-
-        String errors1 = driver.findElement(By.id("errors1")).getText();
-        Assert.assertTrue(errors1.contains("There were errors in your submission"));
+          waitFor(2000);
+        String errors1 = driver.findElement(By.cssSelector("#errors1 ol li:nth-child(1)")).getText();
+        Assert.assertTrue(errors1.contains("Your username is a required field"));
         driver.quit();
     }
 
