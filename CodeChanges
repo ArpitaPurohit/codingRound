@@ -1,0 +1,11 @@
+Below are chnages made in test Script-
+ FlightBookingTest.java -
+    Added wait after Entering Date
+    
+ HotelBookingTest.java-
+    Added Thread.sleep() 
+    Click on Travellers dropdown
+    
+ SignInTest.java-
+    Added Thread.sleep()
+    Changed AssertTrue contains text because text 'There were errors in your submission' is displayed in DOM even if we don't click on SignIN button.
